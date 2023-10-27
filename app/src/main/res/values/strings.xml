@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FigmaDisigne</string>
+    <string name="hello">Привет</string>
+    <string name="text1">Наслаждайся отборочными.\n Будь внимателен. \n Делай хорошо.</string>
+    <string name="enterButton">Войти в аккаунт</string>
+    <string name="text2">Ещё нет аккаунта?</string>
+    <string name="text3">Зарегестрируйтесь</string>
+    <string name="text4">Sign in</string>
+    <string name="text5">Register</string>
+    <string name="text6">С возвращением, Эмиль!</string>
+    <string name="text7">Каким ты себя ощущаешь сегодня?</string>
+    <string name="butAbout">подробнее</string>
+    <string name="blog1">Заголовок блока</string>
+    <string name="blog2">Кратенькое описание блока с двумя строчками</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

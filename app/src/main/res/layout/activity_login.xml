@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backlog"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/lotos" />
+    <TextView
+        android:id="@+id/signLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView1"
+        android:text="@string/text4"
+        android:fontFamily="@font/source_serif_pro"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="29dp"
+        />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/source_serif_pro"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/signLbl" />
+
+    <EditText
+        android:id="@+id/passTxt"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/source_serif_pro"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTxt" />
+    <Button
+        android:id="@+id/enterBtn"
+        android:layout_width="315dp"
+        android:layout_height="56sp"
+        android:layout_marginTop="106dp"
+        android:backgroundTint="@color/button1Col"
+        android:text="@string/text4"
+        android:textSize="16dp"
+        android:onClick="logIn"
+        android:textStyle="bold"
+        android:fontFamily="@font/source_serif_pro"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passTxt" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text5"
+        android:textColor="@color/white"
+        android:id="@+id/text3"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/source_serif_pro"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterBtn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

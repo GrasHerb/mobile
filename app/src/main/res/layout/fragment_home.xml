@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/mainBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/cornerBut"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/cornbut1"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/lotosM"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/lotos"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintStart_toEndOf="@id/cornerBut"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/profileE"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/profilepicture"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintStart_toEndOf="@id/lotosM"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_home1"
+        android:fontFamily="@font/source_serif_pro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lotosM"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="@string/text6"
+        />
+
+    <TextView
+        android:id="@+id/text_home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/source_serif_pro"
+        android:text="@string/text7"
+        android:textColor="#BFFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feel_rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_home2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/source_serif_pro"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/state_rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/source_serif_pro"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feel_rec" />
+</androidx.constraintlayout.widget.ConstraintLayout>
